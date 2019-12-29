@@ -1,0 +1,42 @@
+{
+  "name": "the-lost-holocron",
+  "version": "1.0.0",
+  "description": "Ancient knowledge.",
+  "main": "app.js",
+  "author": "Marcos Leonel",
+  "license": "MIT",
+  "engine": {
+    "node": ">=10.6.0"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "lint": "./node_modules/.bin/eslint ."
+  },
+  "dependencies": {
+    "@hapi/boom": "^8.0.1",
+    "@hapi/hapi": "^18.4.0",
+    "@hapi/inert": "^5.2.2",
+    "@hapi/joi": "^16.1.8",
+    "@hapi/vision": "^5.5.4",
+    "hapi": "^18.1.0",
+    "hapi-swagger": "^11.1.0",
+    "inert": "^5.1.3",
+    "vision": "^5.4.4",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.1",
+    "eslint-plugin-security": "^1.4.0",
+    "husky": "^1.3.1",
+    "supertest": "^3.4.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn lint",
+      "pre-push": "yarn lint"
+    }
+  }
+}
