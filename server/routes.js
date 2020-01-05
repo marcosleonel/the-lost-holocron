@@ -1,6 +1,8 @@
-const randomQuote = require('../random-quote/random-quote');
+const quotesByMaster = require('../quotes-by-master/route');
+const randomQuote = require('../random-quote/route');
 
 const routes = [
+  quotesByMaster,
   randomQuote,
 ];
 

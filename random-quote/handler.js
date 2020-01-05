@@ -2,7 +2,7 @@ const Boom = require('@hapi/boom');
 const Data = require('../data/quotes');
 const logger = require('../logger/logger');
 
-const randomHanlder = () => { // eslint-disable-line
+const randomHanlder = () => {
   function getRandomInt(min, max) {
     const minInt = Math.ceil(min);
     const maxInt = Math.floor(max);

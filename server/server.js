@@ -20,20 +20,6 @@ const server = Hapi.server({
         'Authorization',
         'If-None-Match',
       ],
-      additionalHeaders: [
-        'Access-Control-Allow-Origin',
-        'Access-Control-Allow-Headers',
-        'Origin',
-        'X-Requested-With',
-        'Cache-Control',
-      ],
-      additionalExposedHeaders: [
-        'Access-Control-Allow-Origin',
-        'Access-Control-Allow-Headers',
-        'Origin',
-        'X-Requested-With',
-        'Cache-Control',
-      ],
     },
   },
 });

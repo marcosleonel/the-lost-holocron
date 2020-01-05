@@ -24,3 +24,5 @@ RUN yarn install --network-concurrency 1
 COPY . .
 
 EXPOSE 3030
+
+CMD [ "yarn", "start" ]

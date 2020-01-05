@@ -21,5 +21,6 @@ module.exports = {
     "node/prefer-global/url": ["error", "always"],
     "node/no-unpublished-require": 0,
     "node/no-undercore-dangle": 0,
+    "consistent-return": 0,
   },
 };
